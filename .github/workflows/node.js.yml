@@ -15,20 +15,16 @@ on:
       - 'releases/**'
     paths:
       - 'source/src/**'
-      
-
 
   workflow_dispatch:
-  
-defaults:
-  run:
-    #shell: bash
-    working-directory: source/
  
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: source/src
 
     strategy:
       matrix:
