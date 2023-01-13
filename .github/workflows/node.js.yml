@@ -22,8 +22,8 @@ on:
   
 defaults:
   run:
-    shell: bash
-    working-directory: source/src/
+    #shell: bash
+    working-directory: source/
  
 jobs:
   build:
